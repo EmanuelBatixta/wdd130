@@ -26,9 +26,12 @@ body{
     font-family: var(--paragraph-font);
 }
 
+/* cabeçalho */
 header{
     display: grid;
-    margin: 1rem auto;
+    margin-top: 0px;
+    margin: auto;
+    margin-bottom: 1rem;
     grid-template-columns: 70px 1fr 2fr;
     align-items: center;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.222) ;
@@ -62,6 +65,7 @@ header img{
     border-radius: 10px;
 }
 
+/* 1 parte do artigo */
 .hero {
     position: relative;
 }
@@ -96,9 +100,61 @@ header img{
     float: right;
 }
 
+/* history */
+.history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    
+}
 
+.history img{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.adventure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* adventure section */
+figure{
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+figure img{
+    max-width: 180px;
+    height: auto;
+}
+
+figure div{
+    margin-right: 5px;
+}
+
+figcaption{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.734);
+    width: 176px;
+    /* margin-bottom: 10px; */
+    color: white;
+    font-family: var(--paragraph-font);
+    padding: 2px;
+    position: absolute;
+    top: 120.12px;
+
+}
+
+/* footer */
 footer img{
-    max-width: 35px;
+    max-width: 30px;
     padding-right: 5px;
 }
 
@@ -108,12 +164,16 @@ footer{
     align-items: center;
     border-top: solid 1px var(--primary-color);
     padding: 10px;
+    margin-top: 50px;
 }
+
 footer p {
     display: flex;
     justify-content: center;
     grid-column: 1/ span 2;
 }
+
 .sociallinks{
-   grid-column: 3;    
+   grid-column: 3; 
+   grid-row: 1;   
 }
