@@ -21,15 +21,45 @@ h1, h2, h3, h4, h5, h6{
 }
 
 body{
+    margin: 0 auto;
     max-width: 960px;
     font-family: var(--paragraph-font);
 }
 
+header{
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: 70px 1fr 2fr;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.222) ;
+    max-width: 1000px;
+    justify-items: center;
+}
 
+header img{
+    margin: 10px;
+    width: 100px;
+    height: auto;
+    grid-column: 2;
+}
 
-nav a{
+.headernav{
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    grid-column: 3;
+}
+
+.headernav a{
     text-decoration: none;
     color: var(--nav-link-color);
+    padding: 10px;
+}
+
+.headernav a:hover{
+    background-color: var(--nav-hover-bakcground-color);
+    color: var(--nav-hover-link-color);
+    border-radius: 10px;
 }
 
 .hero {
@@ -70,4 +100,20 @@ nav a{
 footer img{
     max-width: 35px;
     padding-right: 5px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    align-items: center;
+    border-top: solid 1px var(--primary-color);
+    padding: 10px;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/ span 2;
+}
+.sociallinks{
+   grid-column: 3;    
 }
