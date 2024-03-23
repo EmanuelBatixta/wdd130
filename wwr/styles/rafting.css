@@ -112,7 +112,6 @@ header img{
 .history img{
     width: 200px;
     float: left;
-    margin-right: 20px;
 }
 
 .adventure{
@@ -128,6 +127,7 @@ figure{
     position: relative;
     align-items: center;
     justify-content: space-around;
+    margin: 5px;
 }
 
 figure img{
@@ -135,9 +135,6 @@ figure img{
     height: auto;
 }
 
-figure div{
-    margin-right: 5px;
-}
 
 figcaption{
     text-align: center;
