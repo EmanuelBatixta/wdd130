@@ -6,6 +6,21 @@
 
 /*Class Selectors*/
 
+header, .grid, footer{
+    max-width:  840px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 6, 34, 0.1);
@@ -15,22 +30,27 @@
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
     background-color: steelblue;
-    padding: 10px;
-}
-
-main {
-    max-width: 900px;
+    padding: 1rem;
 }
 
 nav a {
+    display: block;
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: steelblue;
+    border-bottom: solid 1px steelblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 main img {
@@ -50,6 +70,8 @@ aside{
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img{
@@ -62,7 +84,10 @@ aside h2{
     top: 15px;
     left: 72px;
 }
-
+.box{
+    padding: 10px;
+    padding-left: 30px;
+}
 footer{
     margin-top: 15px;
     border-top: 1px solid rgba(0, 6, 34, 0.1);
