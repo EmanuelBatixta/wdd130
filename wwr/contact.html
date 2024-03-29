@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rafting Travel</title>
+    <meta name="description" content="This website is to show our ways to contact us">
+    <meta name="author" content="Emanuel Jonatas">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="rafting logo">
+        <nav class="headernav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="info">
+            <div class="contact">
+                <h1>Contact Us</h1> 
+                <p class="icon" id="location"><span class="material-symbols-outlined">
+                    location_on
+                    </span> R. Carlos Nunes de Paula, 1752 - Colonial, São José dos Campos</p>
+                <p class="icon" id="call"><span class="material-symbols-outlined">
+                    call
+                    </span> +55 4002-8922</p>
+                <p class="icon" id="mail"><span class="material-symbols-outlined">
+                    mail
+                    </span> <a href="mailto:">raftingtravel@mail.com</a></p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14659.866516532917!2d-45.89995696406248!3d-23.280662234771576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdb57acb1828db%3A0x6322cffe32940114!2sA%20igreja%20de%20Jesus%20Cristo%20dos%20santos%20dos%20ultimos%20dias!5e0!3m2!1sen!2sbr!4v1711663754049!5m2!1sen!2sbr" width="600px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <form>
+            <div>
+                <label for="user-name">Name:</label>
+                <input type="text" name="user-name" id="user-name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="radio-items">
+                <p>Purpose of the message:</p>
+                <div>
+                    <input type="radio" name="purpose" id="general">
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" name="purpose" id="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" name="purpose" id="website">
+                    <label for="website">Website Suggestion</label>
+                </div>
+                
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️2024 ⚡Rafting Travel | Emanuel Jonatas⚡</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+        </nav>
+    </footer>
+</body>
+</html>
