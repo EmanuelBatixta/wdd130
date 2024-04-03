@@ -203,7 +203,7 @@ td{
     background: var(--accent01-color);
 }
 
-article{
+.trips{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -233,7 +233,7 @@ article{
     grid-column: 1;
 }
 
-div img{
+.trips div img{
     width: 15rem;
     height: auto;
 }
