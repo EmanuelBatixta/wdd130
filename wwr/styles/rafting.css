@@ -158,22 +158,25 @@ footer img{
 
 footer{
     display: grid;
-    grid-template-columns: 150px 1fr 150px;
+    grid-template-columns: 1fr 2fr 1.1fr;
     align-items: center;
     border-top: solid 1px var(--primary-color);
     padding: 10px;
     margin-top: 50px;
+    max-width: 1000px;
+    margin: 4rem auto 0px;
 }
 
 footer p {
     display: flex;
     justify-content: center;
-    grid-column: 1/ span 2;
+    grid-column: 2;
 }
 
 .sociallinks{
    grid-column: 3; 
    grid-row: 1;   
+   text-align: end;
 }
 
 /* trips */
@@ -278,7 +281,7 @@ button:hover{
 }
 
 .bg-index{
-    background: url("/wwr/images/rafting16_1024.jpg") no-repeat center;
+    background: url("https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting16_1024.jpg") no-repeat center;
     background-size: cover;
     margin: 0 auto;
     display: flex;
@@ -298,6 +301,34 @@ button:hover{
     max-width: 2000px;
 }
 
+.main-index{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 2rem;
+}
+
+.article-index{
+    grid-column: 2/4;
+}
+
+.article-index div{
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.left-index{
+    background-color: var(--nav-hover-link-color);
+    grid-column: 4/6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+
+.left-index h2{
+    color: var(--accent02-color);
+}
 
 .form-index{
     display: flex;
@@ -308,6 +339,7 @@ button:hover{
     color: var(--accent01-color);
     border-radius: 1rem;
     max-width: 20rem;
+    margin-top: 3rem;
 }
 
 .form-index h2{
@@ -322,7 +354,7 @@ button:hover{
     width: 14rem;
 }
 
-.form-index button{
+.left-index button{
     background: var(--nav-link-color);
     width: 8rem;
     height: 2rem;
@@ -333,7 +365,11 @@ button:hover{
     font-weight: bold;
 }
 
-.form-index button:hover{
+.left-index button a{
+    color: var(--nav-hover-link-color);
+}
+
+.left-index button:hover{
     background: var(--nav-hover-bakcground-color);
     font-weight: bolder;
 }
