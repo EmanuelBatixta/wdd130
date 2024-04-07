@@ -188,10 +188,12 @@ main{
     align-items: center;
 }
 
-table{
+.trips-main table{
     margin-top: 2rem;
     width: 50rem;
     border: 1px solid var(--nav-hover-link-color);
+    grid-row: 2;
+    grid-column: 1/span2;
     
 }
 
@@ -205,59 +207,83 @@ td{
     color: #002f4d;
     background: var(--accent01-color);
 }
-
-.trips{
+.trips-main{
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    grid-template-rows:2fr .2fr;
+    justify-items: center;
+    align-items: center;
+}
+/* .trips{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    
+    grid-template-rows: .5fr 1fr;
 }
 
 .tibagizão{
     grid-row:1 ;
-    grid-column: 1/3;
-    
+    grid-column: 1;
 }
 
 .tibagizão img{
     height: auto;
     width: 30rem;
     min-width: 600px;
-    float: right;
     margin: 10px;
 }
 
 .peixe{
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 2;
 }
 
 .jalapão{
     grid-row: 2;
     grid-column: 1;
-}
+} */
 
 .trips div img{
     min-width: 200px;
     width: 15rem;
-    height: auto;
+    height: auto; 
 }
 
 .tibagizão, .peixe, .jalapão{
     padding: 1rem;
+    margin-right: 2rem;
 }
 
 .section0{
     background: #F2D57E;
-    width: 95%;
-    height: 10rem;
-    min-height: 500px;
+    height: 40rem;
+    width: 300px;
+    /* min-height: 500px; */
     margin-top: 2rem;
     padding: 1rem;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.section1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.section0 a{
+    text-decoration: none;
+    color: var(--accent01-color);
+    background: var(--nav-hover-link-color);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.section0 a:hover{
+    background: var(--primary-color);
 }
 
 button{
@@ -267,6 +293,7 @@ button{
     border-radius: 1rem;
     width: 10rem;
     height: 3rem;
+    color: var(--nav-link-color);
 }
 
 button a{
@@ -365,7 +392,7 @@ button:hover{
     font-weight: bold;
 }
 
-.left-index button a{
+.left-index button {
     color: var(--nav-hover-link-color);
 }
 
@@ -379,4 +406,24 @@ button:hover{
     accent-color: var(--nav-link-color);
     width: 1rem;
     height: 1rem;
+}
+
+.article-index div img{
+    width: 400px;
+    height: auto;
+}
+
+.left-index a{
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
+    font-weight: 600;
+    background: var(--accent02-color);
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    padding: .1rem;
+}
+
+.left-index a:hover{
+    background: var(--nav-hover-bakcground-color);
 }
