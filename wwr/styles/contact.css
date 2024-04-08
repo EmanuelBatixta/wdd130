@@ -83,8 +83,8 @@ main{
 }
 
 .map{
-    width: 6rem;
-    height: auto;
+    width: 600px;
+    height: 300px;
     grid-column: 3;
     border: 0;
     grid-row: 1;
@@ -177,3 +177,4 @@ footer p {
    grid-row: 1;   
    text-align: end;
 }
+
