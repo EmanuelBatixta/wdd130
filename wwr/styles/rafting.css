@@ -35,7 +35,7 @@ header{
     grid-template-columns: 70px 1fr 2fr;
     align-items: center;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.222) ;
-    max-width: 1000px;
+    max-width: 960px;
     justify-items: center;
 }
 
