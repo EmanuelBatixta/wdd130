@@ -69,7 +69,6 @@ header img{
 /* body */
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 1fr 1fr;
     margin-top: 5rem;
 }
@@ -84,6 +83,7 @@ main{
 
 .main-contact{
     display: grid;
+    grid-template-rows: 300px 1fr 1fr ;
 }
 
 .map{
@@ -114,14 +114,14 @@ span{
 form{
     display: flex;
     flex-direction: column;
-    grid-row: 2/span3;
+    grid-row: 3;
     grid-column: 1;
     background-color: var(--accent01-color);
     
     padding: 1rem;
     width: 500px;
     align-items: center;
-    margin: 3rem auto;
+    margin: 0rem auto;
 
 
 }
@@ -150,6 +150,34 @@ input[type="text"], input[type="email"]{
 .radio-items{
     display: flex;
     flex-direction: column;
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-top: 30px;
+}
+
+.employers{
+    display: flex;
+    grid-row: 2;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.employers div{
+    display: flex;
+}
+.employer img{
+    width: 200px;
+    height: auto;
+    
+}
+
+.employers figcaption{
+    text-align: center;
 }
 
 /* footer */
