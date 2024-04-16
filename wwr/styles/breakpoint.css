@@ -168,7 +168,8 @@ button:hover{
 }
 
 .article-index div img{
-    max-width: 90vw;
+    width: 90vw;
+    max-width:600px
 }
 
 .left-index{
